@@ -15,7 +15,7 @@ from cycler import cycler
 FREQUENCY = 30.  # Sampling rate (in Herz)
 
 # Data Loading
-data_path = Path(__file__).parent / "imu_data.csv"
+data_path = Path(__file__).parent / "accel_data.csv"
 data = pd.read_csv(data_path, index_col=0)
 acc = data[["ax", "ay", "az"]].values  # Acceleration, in
 gyr = np.radians(data[["gx", "gy", "gz"]].values)  # Angular speed, in radin
