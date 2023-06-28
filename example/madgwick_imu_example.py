@@ -12,7 +12,7 @@ from pathlib import Path
 from cycler import cycler
 
 # Paramaeters
-FREQUENCY = 300.  # Sampling rate (in Herz)
+FREQUENCY = 30.  # Sampling rate (in Herz)
 
 # Data Loading
 data_path = Path(__file__).parent / "imu_data.csv"
